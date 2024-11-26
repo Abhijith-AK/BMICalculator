@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container1">
+        <h1><em>BMI Calculator</em></h1>
+        <div class="calculator">
+            <div class="dial">
+                <div class="section section1"></div>
+                <div class="section section2"></div>
+                <div class="section section3"></div>
+                <div class="section section4"></div>
+                <div id="gear" class="ff"><div class="hand"></div></div>
+                <div class="dial-info">
+                </div>
+            </div>
+            <div id="result" class="text-center">
+                <h2 id="score">BMI score: <span id="bmi_score">0.0</span> </h2>
+                <h3 id="message"></h3>
+            </div>
+            <div class="form">
+                <div class="height">
+                    <h4>Height</h4>
+                    <input type="range" value="100" min="100" max="300" name="" id="height" oninput="calculate()">
+                    <input type="number" class="range" id="heightValue" value="100" width="40px" oninput="valueFix()"></input><span> cm</span>
+                </div>
+                <div class="weight">
+                    <h4 id="M">Weight</h4>
+                    <input type="range" value="20" min="20" max="150" name="" id="weight" oninput="calculate()">
+                    <input type="number" class="range" id="weightValue" value="20" oninput="valueFix()"></input><span> kg</span>
+                </div>
+                <!-- <div class="gender ">
+                    <h4>Gender</h4>
+                        <input type="radio" name="gender" id="male">
+                        <label class="btns" id="M"  for="male"><b>Male</b> <img width="70" src="./assets/images/man-male-svgrepo-com.svg" alt="Male"></label>
+                 
+                    <span style="font-size: 2em;">|</span>
+                
+                        <input type="radio" name="gender" id="female">
+                        <label class="btns" for="female"><b>Female</b> <img width="90" src="./assets/images/female-svgrepo-com.svg" alt="Female"></label>
+                  
+                </div> -->
+            </div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
